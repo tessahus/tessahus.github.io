@@ -1,0 +1,231 @@
+/* http://www.google.com/fonts#ReviewPlace:refine/Collection:Rambla|Dosis|Signika */
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  background-image: url(handcopy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+}
+
+#topcontainer {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+  margin-top: 40px;
+}
+
+.overlay {
+  background: rgba(255,255,255,0.85);
+}
+
+.lessspace {
+  line-height: 100%;
+}
+ 
+#pagetitle {
+  font-family: 'Tangerine', cursive;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 100px;
+  padding: 40px 20px 0px 20px;
+  border-radius: 0px 0px 0px 0px;
+  font-weight: 800;
+  cursor: default;
+  color: black;
+}
+
+#linkbar {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#linkbar a {
+  text-decoration: none;
+  display: inline;
+  color: #C91A34
+}
+
+#textcontent a {
+  text-decoration: none;
+  color: #C91A34
+}
+
+#pagetitle a {
+  text-decoration: none;
+  color: black;
+}
+
+.linkbaritem {
+  outline: 0;
+  outline-color: black;
+  padding-left: 15px;
+  display: inline;
+  color: #C91A34;
+}
+
+#linkbar a:first-child {
+  padding-left: 0px;
+}
+
+#linkbar a:last-child {
+  padding-right: 5px;
+}
+
+#linkbar a:hover { /* here i change the blue to red */
+  color: #BD969C;
+}
+
+#textcontent a:hover { /* here i change the blue to red */
+  color: black;
+}
+
+#linkbar .fa:hover {
+  color: #BD969C;
+}
+
+.dropdownparent {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdownparent:hover .dropdownmenu {
+  visibility:visible;
+  opacity:1;
+  transition-delay:0s;
+}
+
+.dropdownmenu {
+  line-height: 30px;
+  position: absolute;
+  white-space: nowrap;
+  top: 24px;
+  left: 15px;
+  background: rgba(255,255,255,0.85);
+  text-align: left;
+  padding: 5px 5px 5px 5px;
+  border-radius: 0px 0px 5px 5px;
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear; /*test if works in all browsers if not add prefix*/
+}
+
+.dropdownmenu a {
+  display: block;
+  padding-top: 10px;
+}
+
+/*.dropdownmenu a:hover {
+  background-color: bbb; 
+}*/
+
+.clear {
+  clear: both;
+}
+
+.columns {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 10px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 10px; /* Firefox */
+    column-gap: 10px;
+} 
+
+.allmoveup {
+  height:80%;
+}
+
+#fixedcontent {
+  position: fixed;
+  width: 100%;
+  height: 80%;
+  bottom: 0px; /* Fallback if CSS animations aren't supported. */
+}
+
+#contentpane {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12pt;
+  background: rgba(240,240,240, 0.95); /* Mimic the effective color of the translucent bar at the top */
+  position: relative; /* Use an explicit non-static position so that the absolutely-positioned div inside
+                         will be positioned relative to us. */
+  border-radius: 5px 5px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 400px;
+  width: 70%;
+  height: 90%;
+}
+
+#textcontent {
+  /*
+   * Use this trick instead of height:100% so that the margin and padding are
+   * bound inside of the containing div.
+   */
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: scroll;
+  text-align: justify;
+
+  /*
+   * Use margin for top and bottom so that the margins apply to the scroll area.
+   * Use padding for left and right so that the scroll bar is outside the margin.
+   */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 50px;
+  color: #C91A34;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.red {
+  color: #C91A34;
+}
+
+.specialp {
+  text-align: right;
+  line-height: 150%;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.marks {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Tangerine', cursive;
+  color: #C91A34;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-style: inset;
+    border-width: 1px;
+} 
