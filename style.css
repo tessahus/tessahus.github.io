@@ -238,3 +238,7 @@ hr {
 .small {
   font-size: 11px;
 }
+
+.fa-tessa:before{
+  content:"\f08c"
+}
