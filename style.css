@@ -7,7 +7,8 @@ html {
 
 body {
   margin: 0px;
-  background-image: url(handcopy.jpg);
+  /* Photo from https://unsplash.com/photos/71vAb1FXB6g */
+  background-image: url(bridge.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -20,7 +21,7 @@ body {
 }
 
 .overlay {
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.0);
 }
 
 .lessspace {
@@ -53,12 +54,12 @@ body {
 #linkbar a {
   text-decoration: none;
   display: inline;
-  color: #C91A34
+  color: black
 }
 
 #textcontent a {
   text-decoration: none;
-  color: #C91A34
+  color: black
 }
 
 #pagetitle a {
@@ -71,7 +72,7 @@ body {
   outline-color: black;
   padding-left: 15px;
   display: inline;
-  color: #C91A34;
+  color: black;
 }
 
 #linkbar a:first-child {
