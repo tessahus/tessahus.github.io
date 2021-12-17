@@ -6,7 +6,11 @@ html {
 body {
   margin: 0px;
   /* Photo from https://unsplash.com/photos/71vAb1FXB6g */
-  background-image: url(bridge.jpg);
+  background-image: url(bridge.jpg); @media (max-width: 500px) and (max-height: 1000px) {
+    body {
+      background-image: url(bridge_small.jpg);
+    }
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left top;
@@ -26,7 +30,7 @@ body {
 }
  
 #pagetitle {
-  font-family: 'Special Elite', cursive;
+  font-family: 'Special Elite', sans-serif;
   width: 50%;
   margin: 0 auto;
   text-align: center;
